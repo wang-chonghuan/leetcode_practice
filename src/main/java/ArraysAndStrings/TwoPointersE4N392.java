@@ -17,7 +17,7 @@ package ArraysAndStrings;
  * 关键在于，有一个字符串遍历完，整个就遍历完了，不需要继续遍历了
  * 如果s字符串彻底遍历完，说明全部匹配了，那么就子串匹配成功了
  */
-public class TwoPointersN392E4 {
+public class TwoPointersE4N392 {
     public boolean isSubseq(String s, String t) {
         int iSubseq = 0;
         int iOriseq = 0;
