@@ -5,7 +5,7 @@ package Tree;
  *
  * Given the root of a binary tree, find the length of the longest path from the root to a leaf.
  */
-public class BinaryTreeE1N104 {
+public class BitreeDFSE1N104 {
     public int maxDepth(TreeNode root) {
         if(root == null) {
             return 0;
