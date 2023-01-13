@@ -25,7 +25,7 @@ package Tree;
  *
  *
  */
-public class BitreeDFSE4N236 {
+public class BitreeDfsE4N236 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root == null) {
             return null;

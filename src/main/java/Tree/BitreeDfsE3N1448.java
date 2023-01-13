@@ -9,7 +9,7 @@ package Tree;
  * 关键是思考每次迭代的中间变量,我认为本题是最大值
  * 本题有两个变量,一是节点个数,二是当前最大值
  */
-public class BitreeDFSE3N1448 {
+public class BitreeDfsE3N1448 {
     public int goodNodes(TreeNode root) {
         return dfs(root, Integer.MIN_VALUE);
     }

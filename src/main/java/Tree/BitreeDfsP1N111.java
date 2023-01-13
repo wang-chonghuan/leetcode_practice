@@ -12,7 +12,7 @@ package Tree;
  *
  *
  */
-public class BitreeDFSP1N111 {
+public class BitreeDfsP1N111 {
     public int minDepth(TreeNode root) {
         return dps(root, 0);
     }
