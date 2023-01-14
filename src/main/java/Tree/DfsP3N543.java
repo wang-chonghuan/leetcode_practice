@@ -18,7 +18,7 @@ package Tree;
  * 所有DFS每个节点, 计算其最远叶子后代的距离和
  * 用一个递归DFS函数计算每个节点的最远叶子,在递归的过程中,更新直径
  */
-public class BitreeDfsP3N543 {
+public class DfsP3N543 {
 
     private int diameter;
 

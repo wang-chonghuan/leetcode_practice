@@ -13,7 +13,7 @@ import java.util.Queue;
  * (i.e., from left to right,
  * then right to left for the next level and alternate between).
  */
-public class BitreeBfsP2N103 {
+public class BfsP2N103 {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> ret = new LinkedList<>();
         if(root == null) {

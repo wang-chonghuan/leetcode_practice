@@ -8,7 +8,7 @@ import java.util.Queue;
  * Given the root of a binary tree,
  * return the sum of values of its deepest leaves.
  */
-public class BitreeBfsP1N1302 {
+public class BfsP1N1302 {
     public int deepestLeavesSum(TreeNode root) {
         if(root == null) {
             return 0;

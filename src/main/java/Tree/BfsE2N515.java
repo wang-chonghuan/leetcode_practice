@@ -10,7 +10,7 @@ import java.util.Queue;
  * Given the root of a binary tree,
  * return an array of the largest value in each row of the tree.
  */
-public class BitreeBfsE2N515 {
+public class BfsE2N515 {
     public List<Integer> largestValues(TreeNode root) {
         List<Integer> ret = new LinkedList<>();
         // 必不可少

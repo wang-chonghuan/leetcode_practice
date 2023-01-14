@@ -11,7 +11,7 @@ package Tree;
  *
  * 关键是找到每次迭代的中间变量,本题是前面的路径和,但不包含当前节点
  */
-public class BitreeDfsE2N112 {
+public class DfsE2N112 {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         return dfs(root, targetSum, 0);
     }

@@ -13,7 +13,7 @@ package Tree;
  * 其实思路还是针对每一个节点,与这条线上的所有节点作比较,求最大差值
  * 但是如果沿途记录了这条线上的最大值和最小值,就不用与每个节点比较,只比较最大值最小值即可
  */
-public class BitreeDfsP2N1026 {
+public class DfsP2N1026 {
     public int maxAncestorDiff(TreeNode root) {
         // 处理边界情况
         if(root == null) {

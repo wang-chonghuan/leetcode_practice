@@ -14,7 +14,7 @@ import java.util.Queue;
  *
  * 就是打印一棵树最右侧的节点
  */
-public class BitreeBfsE1N199 {
+public class BfsE1N199 {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> ret = new ArrayList<>();
         Queue<TreeNode> levelNodes = new LinkedList<>();

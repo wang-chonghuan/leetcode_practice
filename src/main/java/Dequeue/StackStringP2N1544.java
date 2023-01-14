@@ -1,0 +1,55 @@
+package Dequeue;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.stream.Collectors;
+
+/**
+ * 1544. Make The String Great
+ *
+ * Given a string s of lower and upper case English letters.
+ *
+ * A good string is a string which doesn't have two adjacent characters s[i] and s[i + 1] where:
+ *
+ * 0 <= i <= s.length - 2
+ * s[i] is a lower-case letter and s[i + 1] is the same letter but in upper-case or vice-versa.
+ * To make the string good, you can choose two adjacent characters that make the string bad and remove them. You can keep doing this until the string becomes good.
+ *
+ * Return the string after making it good. The answer is guaranteed to be unique under the given constraints.
+ *
+ * Notice that an empty string is also good.
+ */
+public class StackStringP2N1544 {
+    public String makeGood(String s) {
+        Deque<Character> dq = new ArrayDeque<>();
+        for(int i = 0; i < s.length(); i++) {
+            var curChar = s.charAt(i);
+            if(dq.size() != 0) {
+                var topChar = dq.peekFirst();
+                if(shouldReduce(curChar, topChar)) {
+                    dq.removeFirst();
+                } else {
+                    dq.addFirst(curChar);
+                }
+            } else {
+                dq.addFirst(curChar);
+            }
+        }
+        String s1 = dq.stream().map(Object::toString)
+                .collect(Collectors.joining());
+        String s2 = new StringBuilder(s1).reverse().toString();
+        return s2;
+    }
+    private boolean shouldReduce(Character c1, Character c2) {
+        if(Character.isLowerCase(c1) && Character.isUpperCase(c2)) {
+            if(Character.toUpperCase(c1) == c2) {
+                return true;
+            }
+        }
+        if(Character.isUpperCase(c1) && Character.isLowerCase(c2)) {
+            if(Character.toLowerCase(c1) == c2) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
